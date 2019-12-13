@@ -242,10 +242,12 @@ footer {
     display: none;
   }
 }
-.home .space-images .blast {
-  display: flex;
-  width: 95%;
-  align-self: center;
+@media ( max-width: 500px ) {
+  .home .space-images .blast {
+    display: flex;
+    width: 95%;
+    align-self: center;
+  }
 }
 .home .visit-planets {
   padding: 15px;
