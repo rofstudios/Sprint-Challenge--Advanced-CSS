@@ -1,1 +1,30 @@
 // Mixins Here
+
+.column(){
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.hidden(){
+    display: none;
+}
+
+.imgWidth(){
+    width: 95%;
+}
+
+// Button
+.custom-button (@font-color, @button-bg, @button-font-size, @button-width) {
+    display: flex;
+    justify-content: center;
+    background-color: @button-bg;
+    color: @font-color;
+    font-size: @button-font-size;
+    padding: 1rem;
+    width: @button-width;
+    border-radius: 6px;
+    &:hover{
+        background-color: @font-color;
+        color: @button-bg;
+    }
+}
